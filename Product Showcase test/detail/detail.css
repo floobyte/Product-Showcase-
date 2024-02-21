@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#detail{
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(241, 210, 210);
+    /* border: 1px solid rgb(227, 22, 22); */
+}
+
+.detailimg{
+    margin-top: 20px;
+    margin-left: 40%;
+    width: 20%;
+}
+
+.detailimg:hover{
+    transition: 0.6s;
+    transform: scale(1.1);
+}
+
+.detailtitle{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+
+
+.detaiprice{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+
+
+.detaildiv{
+    padding: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin-top: 5%;
+    justify-content: center;
+    height: 60%;
+    width: 60% ;
+    background-color: rgb(253, 253, 253);
+}
+
+.buybtn {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buybtn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.buybtn:active {
+  transform: scale(0.95);
+}
+
+
+/* 
+.buybtn{
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #fa661c;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.buybtn:hover{
+
+     box-shadow: 0 0 50px rgb(255, 128, 0),
+     0 0 25px rgb(248, 96, 8), 0 0 50px rgb(255, 153, 0),
+     0 0 100px rgb(255, 98, 0), 0 0 200px rgb(255, 132, 0);
+} */
+
+
+@media only screen and (max-width: 500px){
+    .detailimg{
+        margin-left: 30%;
+        width: 50%;
+        /* margin-bottom: 30px; */
+    }
+
+    .detaildiv{
+        padding: 10px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        margin-top: 5%;
+        justify-content: center;
+        height: 75%;
+        width: 65% ;
+        background-color: rgb(253, 253, 253);
+    }
+
+
+}

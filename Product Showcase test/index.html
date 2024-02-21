@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Showcase</title>
+</head>
+<body>
+
+    
+    <nav>
+        <!----------------------------------->
+        <div class="left">
+            <img src="/img/download.png" alt="">
+        </div>
+
+        <!----------------------------------->
+        <div class="mid">
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#footer">About</a>
+            <a id="contact" href="#footer">Contact</a>
+        </div>
+        <!----------------------------------->
+        <div class="right">
+            <a  ><img src="img/shopping.png" alt="cart" onclick="showrender()" ></a>
+             <sup class="count">0</sup>
+        </div>
+        <div class="righta">
+            <a ><img src="img/login (2).png" alt="Profile"  onclick="showmodel()" ></a>
+        </div>
+        
+        <!----------------------------------->
+    </nav>
+
+    <div class="sliderbody">
+        <div class="slider">
+        </div>
+     </div>
+
+<!-- main section -->
+    <section id="products" class="product-container"  >
+        <div class="loginform">
+            <form action="">
+                <div class="close" onclick="remove()" >X</div>
+                <div>  
+                    <label for="">Username</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Password</label>
+                    <input type="password">
+                </div>
+                <button class="Submit">Login</button>
+                <button class="Create_Account">Create Account</button>
+            </form>
+        </div>
+
+        <!-- cart -->
+        <div id="rendar" class="rendar">
+            <h1 class="text">Your Cart Section</h1>
+            <p id="total_price"></p>
+            <div class="cartclose" onclick="cartremove()">Close</div>
+        </div>
+        <!-- cart end -->
+
+    </section>
+ <!-- mina end -->
+    
+
+    </div>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="leftfooter">
+                <h4>DOWNLOAD OUR APP</h4>
+                <p>Download App for Android and IOS mobile phone</p>
+                <img src="img/playstore.png" alt="playstore">
+                <img src="img/Appstore.png" alt="Appstore">
+            </div>
+    
+    
+            <!---------------------------------------->
+            <div class="midfooter">
+                <img src="/img/download.png" alt="Logo">
+                <p>Our purpose Is To Sustainably Make the pleasure and Benefit of Cloth Accessible to the Many</p>
+    
+                <p>Copyrights 2024 &copy; Ram Nargave</p>
+            </div>
+    
+            <!------------------------------------------->
+            
+            
+            <div class="rightfooter">
+                <h4>Follow Us</h4>
+                <a href="https://www.instagram.com/ram_nargave_18/" target="_blank" >Instagram</a>
+                <a href="/">YouTube</a>
+                <a href="https://www.facebook.com/" target="_blank">FaceBook</a>
+                <a href="https://twitter.com/?lang=en" target="_blank">Twitter</a>
+            </div>
+        </footer>
+
+    
+</body>
+</html>

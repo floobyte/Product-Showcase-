@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="detail.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+</head>
+<body>
+    <div id="detail">
+
+    </div>
+</body>
+<script>
+
+    let detail = document.getElementById("detail")
+    let product = JSON.parse(localStorage.getItem("product"))
+
+    let productCard = document.createElement("div");
+    productCard.setAttribute("class", "detaildiv")
+
+
+
+    const image = document.createElement("img");
+    image.setAttribute("class", "detailimg")
+    image.src = product.image;
+    image.alt = product.title;
+
+    const title = document.createElement("h3");
+    title.setAttribute("class","detailtitle")
+    title.textContent = product.title;
+
+    const price = document.createElement("p");
+    price.setAttribute("class","detaiprice")
+    price.textContent = `Rs${product.price}`;
+
+
+    const desc = document.createElement("p");
+    desc.setAttribute("class","detaildesc")
+    desc.textContent = product.description;
+
+
+    // buybtn function
+
+    const buybtn = document.createElement("button");
+    buybtn.setAttribute("class", "buybtn");
+    buybtn.textContent = "Buy Now"
+
+    buybtn.addEventListener("click", () =>{
+        window.location.assign("/Payment/index.html")
+        
+    })
+
+    // buybtn function end
+
+    detail.append(productCard)
+    detail.append(buybtn)
+
+    productCard.append(image,title,price,desc)
+
+</script>
+</html>
